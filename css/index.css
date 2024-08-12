@@ -9,7 +9,7 @@
     background-color: #239ad5;
     height: 3000px;
     width: 50%;
-    position: fixed;
+    position: absolute;
     z-index: 20;
     box-shadow: 0px 0px 40px 1px;
     top:0;
@@ -18,7 +18,7 @@
 
 #muro2 {
     right: 0;
-    animation: derecha 1.5s forwards ease-in-out;
+    animation: derecha 2s forwards ease-in-out;
 }
 
 @keyframes derecha {
@@ -27,12 +27,13 @@
     }
     to {
         right: -800px;
+        width: 0%;
     }
 }
 
 #muro1 {
     right: 0;
-    animation: izquierda 1.5s forwards ease-in-out;
+    animation: izquierda 2s forwards ease-in-out;
 }
 
 @keyframes izquierda {
@@ -41,6 +42,24 @@
     }
     to {
         left: -800px;
+        width: 0%;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 86.5vh;
+    animation: zoomout 1.5s forwards ease-in-out;
+    
+}
+
+@keyframes zoomout {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
     }
 }
 
