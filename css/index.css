@@ -15,33 +15,21 @@
     top:0;
 }
 
+#muro1 {
+    left: 0;
+    animation: movimiento 1.5s forwards ease-in-out;
+}
 
 #muro2 {
     right: 0;
-    animation: derecha 2s forwards ease-in-out;
+    animation: movimiento 1.5s forwards ease-in-out;
 }
 
-@keyframes derecha {
+@keyframes movimiento {
     from {
-        right: 0;
+        width: 50%;
     }
     to {
-        right: -800px;
-        width: 0%;
-    }
-}
-
-#muro1 {
-    right: 0;
-    animation: izquierda 2s forwards ease-in-out;
-}
-
-@keyframes izquierda {
-    from {
-        left: 0;
-    }
-    to {
-        left: -800px;
         width: 0%;
     }
 }
@@ -52,22 +40,6 @@ body {
     min-height: 86.5vh;
     animation: zoomout 1.5s forwards ease-in-out;
     
-}
-
-@keyframes zoomout {
-    from {
-        transform: scale(1.2);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 86.5vh;
-    animation: zoomout 1.5s forwards ease-in-out;
 }
 
 @keyframes zoomout {
