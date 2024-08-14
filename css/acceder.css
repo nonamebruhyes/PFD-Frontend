@@ -1,7 +1,7 @@
 
 body{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: linear-gradient(-45deg, #8980db, #49bee9, #06acff);
     height: 300px;
     background-size: 400% 400%;
@@ -105,7 +105,7 @@ main p{
 }
 
 #volver{
-    background-color: #06acff00;
+    background-color: #269ad4;
     font-weight: bolder;
 }
 
