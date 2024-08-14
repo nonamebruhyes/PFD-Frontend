@@ -2,13 +2,14 @@
 body{
     display: flex;
     flex-direction: row;
-    background: linear-gradient(-45deg, #8980db, #06acff);
+    background: linear-gradient(-45deg, #8980db, #41c0ff);
     background-size: 400% 400%;
     animation: gradient 20s ease infinite;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    margin: 0;
+
 }
 
 #linea{
@@ -31,14 +32,50 @@ body{
     }
 }
 
-main:nth-of-type(1){
-    
+body > div{
+    position: absolute;
+    right: 0;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-main:nth-of-type(1) p{
+body > main {
+    background-color:aliceblue;
+    position: absolute;
+    height:100vh;
+    width: 40%;
+    left: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+body > main img{
+    width: 100%;
+    box-shadow: 0px 0px 10px -px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+body > main h1:nth-of-type(1){
+    color:#0f81bb;
+    font-size: 30px;
+}
+
+body > main h1:nth-of-type(2){
+    color:#0f81bb;
+    font-size: 50px;
+}
+
+body > main p{
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#104255;
 }
 
 main{
@@ -115,7 +152,7 @@ main a:hover{
     text-shadow: 0px 0px 1px white;
 }
 
-main p{
+body div main p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:#104255;
     margin-top: 30px;
