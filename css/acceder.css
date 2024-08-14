@@ -12,13 +12,6 @@ body{
 
 }
 
-#linea{
-    height: 400px;
-    background-color: #104255;
-    width: 4px;
-    border-radius: 50%;
-}
-
 @keyframes gradient {
     0% {
         background-position: 100% 50%;
@@ -29,6 +22,34 @@ body{
     }
     100% {
         background-position: 100% 50%;
+    }
+}
+
+.muros{
+    background-color: #239ad5;
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    z-index: 20;
+    box-shadow: 0px 0px 40px 1px;
+    top:0;
+    animation: movimiento 0.3s forwards ease-in-out;
+}
+
+#muro1 {
+    left: 0;
+}
+
+#muro2 {
+    right: 0;
+}
+
+@keyframes movimiento {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 50%;
     }
 }
 

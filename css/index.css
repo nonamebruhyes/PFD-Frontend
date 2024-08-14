@@ -7,7 +7,7 @@
 
 .muros{
     background-color: #239ad5;
-    height: 3000px;
+    height: 100%;
     width: 50%;
     position: absolute;
     z-index: 20;
@@ -17,12 +17,12 @@
 
 #muro1 {
     left: 0;
-    animation: movimiento 1.5s forwards ease-in-out;
+    animation: movimiento 0.7s forwards ease-in-out;
 }
 
 #muro2 {
     right: 0;
-    animation: movimiento 1.5s forwards ease-in-out;
+    animation: movimiento 0.7s forwards ease-in-out;
 }
 
 @keyframes movimiento {
@@ -38,7 +38,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 86.5vh;
-    animation: zoomout 1.5s forwards ease-in-out;
+    animation: zoomout 0.7s forwards ease-in-out;
+    overflow-x: hidden;
     
 }
 
@@ -205,7 +206,7 @@ main {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 main section {
