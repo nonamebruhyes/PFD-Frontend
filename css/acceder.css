@@ -191,13 +191,14 @@ body div main p{
         height: 200vh;
     }
     body>main{
+        position: static;
         width: 100%;
         top:0;
         height: 100vh;
     }
     body>div{
+        position: static;
         height: 100vh;
-        top:100vh;
         width: 100%;
     }
 }
