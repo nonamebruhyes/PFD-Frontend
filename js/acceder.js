@@ -9,3 +9,13 @@ volver.addEventListener("click", function(){
     setTimeout(function(){
         window.location.href = "./index.html"},700);
 });
+
+
+let login = document.getElementById("login");
+
+login.addEventListener("click", function(){
+    window.scrollTo({
+        top:2000,
+        behavior: "smooth"
+    });
+})
