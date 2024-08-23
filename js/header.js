@@ -7,7 +7,9 @@ desplegable.addEventListener("mouseover", function(){
 })
 
 desplegable.addEventListener("mouseout", function(){
+    if(window.innerWidth < 800){
     despliege.style.display = "none";
+    }
 })
 
 
@@ -17,5 +19,19 @@ despliege.addEventListener("mouseover", function(){
 })
 
 despliege.addEventListener("mouseout", function(){
-    despliege.style.display = "none";
+    if(window.innerWidth < 800){
+        despliege.style.display = "none";
+    }
+    
 })
+
+
+window.addEventListener("resize", function(){
+    if(window.innerWidth > 800){
+        despliege.style.display = "flex";
+    }else{
+        despliege.style.display = "none";
+    }
+})
+
+
